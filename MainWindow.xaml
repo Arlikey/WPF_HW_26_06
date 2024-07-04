@@ -1,0 +1,43 @@
+﻿<Window x:Class="WPF_HW_26_06.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_HW_26_06"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas Name="RoomCanvas" Background="LightGray" MouseLeftButtonDown="RoomCanvas_MouseLeftButtonDown">
+            <Rectangle Width="180" Height="70" Canvas.Left="380" Canvas.Top="0" Stroke="Black" Fill="LawnGreen" Tag="Кухня"></Rectangle>
+            <TextBlock Text="Кухня (24 м²)" Canvas.Left="430" Canvas.Top="25" Foreground="Black" FontWeight="Bold"/>
+            
+            <Rectangle Width="140" Height="70" Canvas.Left="240" Canvas.Top="0" Stroke="Black" Fill="LightBlue" Tag="Комната 1"></Rectangle>
+            <TextBlock Text="Комната 1 (16 м²)" Canvas.Left="260" Canvas.Top="25" Foreground="Black" FontWeight="Bold"/>
+
+            <Rectangle Width="90" Height="180" Canvas.Left="270" Canvas.Top="70" Stroke="Black" Fill="LightGreen" Tag="Коридор"></Rectangle>
+            <TextBlock Text="Коридор (26 м²)" Canvas.Left="310" Canvas.Top="110" Foreground="Black" FontWeight="Bold">
+                <TextBlock.LayoutTransform>
+                    <RotateTransform Angle="90"></RotateTransform>
+                </TextBlock.LayoutTransform>
+            </TextBlock>
+            <Rectangle Width="200" Height="80" Canvas.Left="360" Canvas.Top="70" Stroke="Black" Fill="LightCyan" Tag="Ванная"></Rectangle>
+            <TextBlock Text="Ванная (28 м²)" Canvas.Left="410" Canvas.Top="100" Foreground="Black" FontWeight="Bold"/>
+            
+            <Rectangle Width="180" Height="180" Canvas.Left="90" Canvas.Top="70" Stroke="Black" Fill="Brown" Tag="Зал"></Rectangle>
+            <TextBlock Text="Зал (45 м²)" Canvas.Left="150" Canvas.Top="145" Foreground="Black" FontWeight="Bold"/>
+
+            <Rectangle Width="200" Height="100" Canvas.Left="360" Canvas.Top="150" Stroke="Black" Fill="CadetBlue" Tag="Спальня 1"></Rectangle>
+            <TextBlock Text="Спальня 1 (30 м²)" Canvas.Left="405" Canvas.Top="190" Foreground="Black" FontWeight="Bold"/>
+
+            <Rectangle Width="200" Height="120" Canvas.Left="360" Canvas.Top="250" Stroke="Black" Fill="CornflowerBlue" Tag="Спальня 2"></Rectangle>
+            <TextBlock Text="Спальня 2 (36 м²)" Canvas.Left="410" Canvas.Top="300" Foreground="Black" FontWeight="Bold"/>
+
+            <Line  X1="270" Y1="220" X2="270" Y2="180" Stroke="Wheat" StrokeThickness="5"></Line>
+            <Line  X1="360" Y1="220" X2="360" Y2="180" Stroke="Wheat" StrokeThickness="5"></Line>
+            <Line  X1="360" Y1="90" X2="360" Y2="130" Stroke="Wheat" StrokeThickness="5"></Line>
+            <Line  X1="380" Y1="250" X2="420" Y2="250" Stroke="Wheat" StrokeThickness="5"></Line>
+            <Line  X1="290" Y1="70" X2="340" Y2="70" Stroke="Wheat" StrokeThickness="5"></Line>
+            <Line  X1="380" Y1="20" X2="380" Y2="50" Stroke="Wheat" StrokeThickness="5"></Line>
+        </Canvas>
+    </Grid>
+</Window>
